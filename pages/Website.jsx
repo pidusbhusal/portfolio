@@ -9,7 +9,7 @@ export default function Website({
 }) {
   const different_types = types?.map((type) => <p className="type">{type}</p>);
   const mystyle = {
-    backgroundColor: { brandColor },
+    backgroundColor: brandColor,
   };
   return (
     <div className="website">

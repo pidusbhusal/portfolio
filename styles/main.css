@@ -169,7 +169,8 @@
 }
 
 .website_card:hover .thumbnail_image {
-  width: 102%;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
@@ -286,18 +287,6 @@
   border-radius: 8px;
 }
 
-.Logo_project:hover .arrow {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  -webkit-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
-}
-
-.Logo_project:hover .mockup {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-}
-
 .Logo_project .mockup_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -397,6 +386,27 @@
   gap: 12px;
   margin: auto 0;
   font-weight: 500;
+}
+
+.Logo_project:hover .arrow {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.Logo_project:hover .image_size {
+  width: 90%;
+  margin: 100px;
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.Logo_project:hover .shadow {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .type_wrapper {
