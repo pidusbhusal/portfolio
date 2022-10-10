@@ -7,11 +7,15 @@ export const Work = () => {
     <div className="work">
       Works💪
       <div className="work_wrapper">
-        <Website />
-        <Logo_project className="logoprojects" />
-        <Logo_project className="logoprojects" />
-        <Website />
-        <Website />
+        <Website
+          types={["App Design", "Logo Design"]}
+          name="Sunrise E-Commerce"
+          description=" I detailswas tasked with creating an mobile app with still
+                in-development website."
+          thumbnail_location="./Thumbnail.png"
+          brandColor="black"
+        />
+        <Logo_project className="logoprojects" bgcolor="white" />
       </div>
     </div>
   );

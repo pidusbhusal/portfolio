@@ -124,15 +124,27 @@ $website-text-color: #fff0ed;
 .website_card {
   //normal condition
 
+  &:hover {
+    .arrow {
+      transform: rotate(-45deg);
+      transition: all 300ms ease-in-out;
+    }
+    .thumbnail_image {
+      width: 102%;
+      transition: all 300ms ease-in-out;
+    }
+  }
   width: 1200px;
   height: 476px;
   display: grid;
   grid-template-columns: 4fr 6fr;
   overflow: hidden;
   border-radius: 8px;
+  // .brand_color {
+  //   background: #2d0b00;
+  // }
 
   .details {
-    background: #2d0b00;
     display: flex;
     * {
       color: $website-text-color;
@@ -180,7 +192,7 @@ $website-text-color: #fff0ed;
   }
 
   .thumbnail {
-    overflow: hid;
+    overflow: hidden;
     background-color: $website-text-color;
     img {
       width: 100%;
@@ -213,18 +225,38 @@ $website-text-color: #fff0ed;
 }
 
 .Logo_project {
-  .mockup {
-    position: absolute;
+  &:hover {
+    .arrow {
+      transform: rotate(-45deg);
+      transition: all 300ms ease-in-out;
+    }
+
+    .mockup {
+      transform: scale(1.5);
+    }
+
+    .image_size {
+    }
+  }
+
+  .mockup_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
     width: inherit;
+    height: inherit;
+    position: absolute;
 
     .shadow {
       margin-left: 239px;
     }
     .image_size {
-      width: 349px;
-      margin: 182px 0 0 256px;
+      margin-left: 150px;
+      transform: scale(0.7);
+      margin-top: auto;
     }
   }
+
   .logo_card {
     width: 100%;
     height: 100%;
@@ -232,6 +264,7 @@ $website-text-color: #fff0ed;
     .details {
       height: 100%;
       display: flex;
+
       * {
         color: $website-text-color;
       }
@@ -252,6 +285,7 @@ $website-text-color: #fff0ed;
           font-size: 28px;
           line-height: 46px;
         }
+
         .type {
           font-size: 14px;
           padding: 0px 12px;
@@ -277,4 +311,9 @@ $website-text-color: #fff0ed;
       }
     }
   }
+}
+
+.type_wrapper {
+  display: flex;
+  gap: 10px;
 }

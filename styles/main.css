@@ -161,8 +161,20 @@
   border-radius: 8px;
 }
 
+.website_card:hover .arrow {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.website_card:hover .thumbnail_image {
+  width: 102%;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
 .website_card .details {
-  background: #2d0b00;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -233,7 +245,7 @@
 }
 
 .website_card .thumbnail {
-  overflow: hid;
+  overflow: hidden;
   background-color: #fff0ed;
 }
 
@@ -274,18 +286,41 @@
   border-radius: 8px;
 }
 
-.Logo_project .mockup {
-  position: absolute;
-  width: inherit;
+.Logo_project:hover .arrow {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
-.Logo_project .mockup .shadow {
+.Logo_project:hover .mockup {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.Logo_project .mockup_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0px;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+}
+
+.Logo_project .mockup_wrapper .shadow {
   margin-left: 239px;
 }
 
-.Logo_project .mockup .image_size {
-  width: 349px;
-  margin: 182px 0 0 256px;
+.Logo_project .mockup_wrapper .image_size {
+  margin-left: 150px;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  margin-top: auto;
 }
 
 .Logo_project .logo_card {
@@ -362,5 +397,12 @@
   gap: 12px;
   margin: auto 0;
   font-weight: 500;
+}
+
+.type_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
 }
 /*# sourceMappingURL=main.css.map */

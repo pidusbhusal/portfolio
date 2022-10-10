@@ -1,10 +1,15 @@
 import React from "react";
 
-function Logo_project() {
+function Logo_project(bgcolor) {
   return (
     <div className="Logo_project">
-      <div className="mockup">
-        <img src="./Click&Capture.png" alt="" className="image_size" />
+      <div className="mockup_wrapper">
+        <img
+          className="keyelement"
+          src="./Click&Capture.png"
+          alt=""
+          className="image_size"
+        />
         <img src="./shadow.svg" alt="" className="shadow" />
       </div>
       <div className="logo_card">
@@ -22,7 +27,7 @@ function Logo_project() {
             </div>
             <div className="readmore">
               <div className="info">Read Case Study</div>
-              <img src="./work_arrow.svg" alt="" />
+              <img className="arrow" src="./work_arrow.svg" alt="" />
             </div>
           </div>
         </div>
