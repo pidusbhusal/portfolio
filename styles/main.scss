@@ -1,0 +1,280 @@
+$font-stack: Satoshi, sans-serif;
+$primary-color: black;
+$font-size: 18px;
+$navbar-font-weight: 600;
+$website-text-color: #fff0ed;
+
+* {
+  font: 100% $font-stack;
+  color: $primary-color;
+  font-size: $font-size;
+  font-weight: $navbar-font-weight;
+  margin: 0px;
+}
+
+.navbar {
+  padding: 32px 0;
+}
+
+.navbar_wrapper {
+  display: flex;
+  justify-content: space-around;
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .links {
+    display: flex;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+  }
+}
+
+.herosection {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  flex-direction: column;
+
+  .hero_wrapper {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+
+    .intro {
+      font-size: 72px;
+      font-weight: 900;
+    }
+
+    .bref {
+      max-width: 690px;
+    }
+
+    .connect_wrappper {
+      .connect_button_wrapper {
+        display: flex;
+
+        .connect {
+          padding: 0px 16px 0px 30px;
+          border-width: 1px 0px 1px 1px;
+          border-style: solid;
+          border-color: #ababab;
+          border-radius: 78px 0px 0px 78px;
+          width: 100%;
+          font-weight: 500;
+          font-size: 16px;
+
+          &:focus-visible {
+            padding: 0px 16px 0px 30px;
+            border-width: 1px 0px 0px 1px;
+            border-style: solid;
+            border-color: #d30101;
+            border-radius: 78px 0px 0px 78px;
+          }
+        }
+
+        .connect_btn {
+          background: #070707;
+          border-radius: 0px 78px 78px 0px;
+          padding: 10px 38px;
+          color: white;
+          font-size: 16px;
+          border-style: solid;
+          border-color: #000000;
+        }
+      }
+
+      .connect_copy {
+        font-size: 14px;
+        font-weight: 500;
+        color: rgb(53, 53, 53);
+        margin-top: 16px;
+      }
+    }
+  }
+}
+
+.showmore {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  color: red($color: #d50000);
+
+  &:hover {
+    img {
+      filter: invert(1);
+      transition: transform 300ms linear; /* 
+      Animation */
+    }
+  }
+}
+
+.website_card {
+  //normal condition
+
+  width: 1200px;
+  height: 476px;
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  overflow: hidden;
+  border-radius: 8px;
+
+  .details {
+    background: #2d0b00;
+    display: flex;
+    * {
+      color: $website-text-color;
+    }
+    .upper_section {
+      display: flex;
+      gap: 8px;
+      margin: auto;
+      flex-direction: column;
+    }
+
+    .details_wrapper {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+
+      .project_name {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 46px;
+      }
+      .type {
+        font-size: 14px;
+        padding: 0px 12px;
+        background: #fff0ed;
+        color: #2d0b00;
+        display: inline-flex;
+        line-height: 28px;
+        border-radius: 2px;
+      }
+      .project_details {
+        font-weight: 400;
+        width: 358px;
+        font-size: 18px;
+        line-height: 28px;
+      }
+      .readmore {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin: auto 0;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .thumbnail {
+    overflow: hid;
+    background-color: $website-text-color;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.work {
+  margin: auto;
+  max-width: 1200px;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+
+  .work_wrapper {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .Logo_project {
+    width: 592px;
+    height: 506.39px;
+    background: linear-gradient(200.21deg, #cb2525 13.46%, #b81224 90.36%);
+    border-radius: 8px;
+  }
+
+  //hover state
+}
+
+.Logo_project {
+  .mockup {
+    position: absolute;
+    width: inherit;
+
+    .shadow {
+      margin-left: 239px;
+    }
+    .image_size {
+      width: 349px;
+      margin: 182px 0 0 256px;
+    }
+  }
+  .logo_card {
+    width: 100%;
+    height: 100%;
+
+    .details {
+      height: 100%;
+      display: flex;
+      * {
+        color: $website-text-color;
+      }
+      .upper_section {
+        display: flex;
+        gap: 8px;
+        margin: auto;
+        flex-direction: column;
+      }
+
+      .details_wrapper {
+        margin-left: 64px;
+        display: flex;
+        flex-direction: column;
+
+        .project_name {
+          font-weight: 700;
+          font-size: 28px;
+          line-height: 46px;
+        }
+        .type {
+          font-size: 14px;
+          padding: 0px 12px;
+          background: #fff0ed;
+          color: #2d0b00;
+          display: inline-flex;
+          line-height: 28px;
+          border-radius: 2px;
+        }
+        .project_details {
+          font-weight: 400;
+          width: 358px;
+          font-size: 18px;
+          line-height: 28px;
+        }
+        .readmore {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          margin: auto 0;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

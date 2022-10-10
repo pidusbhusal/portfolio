@@ -1,7 +1,16 @@
-import '../styles/globals.css'
+import { Herosection } from "./Herosection";
+import { Navbar } from "./Navbar";
+import { Work } from "./Work";
+import "../styles/main.css";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function App() {
+  return (
+    <div className="App">
+      <Navbar />
+      <Herosection className="Herosection" />
+      <Work />
+    </div>
+  );
 }
 
-export default MyApp
+export default App;
