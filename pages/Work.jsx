@@ -14,7 +14,16 @@ export const Work = () => {
           description=" I detailswas tasked with creating an mobile app with still
                 in-development website."
           thumbnail_location="./Thumbnail.png"
-          brandColor="#2D0B00"
+          brandColor="#white"
+        />
+        <Website
+          types={["App Design", "Logo Design"]}
+          name="Sunrise E-Commerce"
+          description=" I detailswas tasked with creating an mobile app with still
+                in-development website."
+          thumbnail_location="./Thumbnail.png"
+          brandColor="blue"
+          textColor="red"
         />
         <Logo_project
           className="logoprojects"
@@ -23,6 +32,7 @@ export const Work = () => {
           description=" Website for my fellow front end developer. He wanted something that he"
           thumbnail_location="./Click&Capture.png"
           brandColor="linear-gradient(200.21deg, #CB2525 13.46%, #B81224 90.36%)"
+          textColor="white"
         />
 
         <Logo_project
@@ -45,7 +55,6 @@ export const Work = () => {
 
         <Random
           style
-          className="logoprojects"
           className="logoprojects"
           types={["Branding"]}
           name="Click & Capture"

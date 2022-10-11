@@ -6,11 +6,22 @@ function Logo_project({
   description,
   thumbnail_location,
   brandColor,
+  textColor,
 }) {
   const mystyle = {
     background: brandColor,
+    color: textColor,
   };
-  const different_types = types?.map((type) => <p className="type">{type}</p>);
+  const typestyle = {
+    background: textColor,
+    color: brandColor,
+  };
+
+  const different_types = types?.map((type) => (
+    <p className="type" style={typestyle}>
+      {type}
+    </p>
+  ));
 
   return (
     <div className="Logo_project" style={mystyle}>
