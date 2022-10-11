@@ -2,7 +2,43 @@ $font-stack: Satoshi, sans-serif;
 $primary-color: black;
 $font-size: 18px;
 $navbar-font-weight: 600;
-$website-text-color: #fff0ed;
+$website-text-color: #fff4ec;
+$white: #fff;
+$blue: #fcfcfc;
+$green: #fff;
+$yellow: #fff4ec;
+$pink: #fff;
+
+.App {
+  overflow: hidden;
+
+  // I do like these colours
+  /* background: 
+    radial-gradient(circle at bottom, #fff -30%, transparent 70%),
+    linear-gradient(to right, #134a8e, #00b6f1 50%),
+    #fff; */
+
+  background: radial-gradient(circle at bottom, $white, transparent 80%),
+    linear-gradient(to top, #ffecda 0%, transparent 70%),
+    linear-gradient(to bottom, transparent, rgba($white, 0.4) 70%), $blue;
+  animation: bg 30s infinite;
+}
+
+@keyframes bg {
+  0%,
+  100% {
+    background-color: $blue;
+  }
+  25% {
+    background-color: $green;
+  }
+  50% {
+    background-color: $yellow;
+  }
+  75% {
+    background-color: $pink;
+  }
+}
 
 * {
   font: 100% $font-stack;
@@ -36,6 +72,10 @@ $website-text-color: #fff0ed;
 }
 
 .herosection {
+  //this is bg animation
+
+  ///
+
   text-align: center;
   display: flex;
   justify-content: center;
@@ -69,6 +109,7 @@ $website-text-color: #fff0ed;
           border-width: 1px 0px 1px 1px;
           border-style: solid;
           border-color: #ababab;
+          background: none;
           border-radius: 78px 0px 0px 78px;
           width: 100%;
           font-weight: 500;
@@ -217,8 +258,9 @@ $website-text-color: #fff0ed;
   .Logo_project {
     width: 592px;
     height: 506.39px;
-    background: linear-gradient(200.21deg, #cb2525 13.46%, #b81224 90.36%);
+
     border-radius: 8px;
+    display: grid;
   }
 
   //hover state

@@ -6,6 +6,9 @@ import "../styles/main.css";
 function App() {
   return (
     <div className="App">
+      <div className="animating_background">
+        
+      </div>
       <Navbar />
       <Herosection className="Herosection" />
       <Work />

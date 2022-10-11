@@ -1,3 +1,47 @@
+.App {
+  overflow: hidden;
+  /* background: 
+    radial-gradient(circle at bottom, #fff -30%, transparent 70%),
+    linear-gradient(to right, #134a8e, #00b6f1 50%),
+    #fff; */
+  background: radial-gradient(circle at bottom, #fff, transparent 80%), -webkit-gradient(linear, left bottom, left top, from(#ffecda), color-stop(70%, transparent)), -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, rgba(255, 255, 255, 0.4))), #fcfcfc;
+  background: radial-gradient(circle at bottom, #fff, transparent 80%), linear-gradient(to top, #ffecda 0%, transparent 70%), linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.4) 70%), #fcfcfc;
+  -webkit-animation: bg 30s infinite;
+          animation: bg 30s infinite;
+}
+
+@-webkit-keyframes bg {
+  0%,
+  100% {
+    background-color: #fcfcfc;
+  }
+  25% {
+    background-color: #fff;
+  }
+  50% {
+    background-color: #fff4ec;
+  }
+  75% {
+    background-color: #fff;
+  }
+}
+
+@keyframes bg {
+  0%,
+  100% {
+    background-color: #fcfcfc;
+  }
+  25% {
+    background-color: #fff;
+  }
+  50% {
+    background-color: #fff4ec;
+  }
+  75% {
+    background-color: #fff;
+  }
+}
+
 * {
   font: 100% Satoshi, sans-serif;
   color: black;
@@ -93,6 +137,7 @@
   border-width: 1px 0px 1px 1px;
   border-style: solid;
   border-color: #ababab;
+  background: none;
   border-radius: 78px 0px 0px 78px;
   width: 100%;
   font-weight: 500;
@@ -182,7 +227,7 @@
 }
 
 .website_card .details * {
-  color: #fff0ed;
+  color: #fff4ec;
 }
 
 .website_card .details .upper_section {
@@ -247,7 +292,7 @@
 
 .website_card .thumbnail {
   overflow: hidden;
-  background-color: #fff0ed;
+  background-color: #fff4ec;
 }
 
 .website_card .thumbnail img {
@@ -283,8 +328,9 @@
 .work .Logo_project {
   width: 592px;
   height: 506.39px;
-  background: linear-gradient(200.21deg, #cb2525 13.46%, #b81224 90.36%);
   border-radius: 8px;
+  display: -ms-grid;
+  display: grid;
 }
 
 .Logo_project .mockup_wrapper {
@@ -325,7 +371,7 @@
 }
 
 .Logo_project .logo_card .details * {
-  color: #fff0ed;
+  color: #fff4ec;
 }
 
 .Logo_project .logo_card .details .upper_section {

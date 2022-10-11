@@ -19,8 +19,37 @@ a {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
     background: black;
   }
+}
+
+
+.Random_container {
+  width: 592px;
+  height: 506.39px;
+  display: grid;
+  grid-template-columns: "container";
+  place-items: center;
+  place-content: center;
+  overflow: hidden;
+}
+
+.Random_container>* {
+  grid-area: container;
+  max-width: 592px;
+}
+
+
+.mockup_wrapper .logo_card {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.random_image {
+  width: 309px;
 }

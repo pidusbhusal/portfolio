@@ -1,22 +1,20 @@
 import React from "react";
 
-function Logo_project({
-  types,
-  name,
-  description,
-  thumbnail_location,
-  brandColor,
-}) {
+function Random({ types, name, description, thumbnail_location, brandColor }) {
   const mystyle = {
     background: brandColor,
   };
   const different_types = types?.map((type) => <p className="type">{type}</p>);
 
   return (
-    <div className="Logo_project" style={mystyle}>
+    <div className="Random_container" style={mystyle}>
       <div className="mockup_wrapper">
-        <img src={thumbnail_location} alt="" className="image_size" />
-        <img src="./shadow.svg" alt="" className="shadow" />
+        <img
+          src={thumbnail_location}
+          alt=""
+          width="302px"
+          className="random_image"
+        />
       </div>
       <div className="logo_card">
         <div className="details">
@@ -37,4 +35,4 @@ function Logo_project({
   );
 }
 
-export default Logo_project;
+export default Random;
