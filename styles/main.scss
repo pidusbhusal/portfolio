@@ -279,85 +279,82 @@ $pink: #fff;
       margin-left: 239px;
     }
     .image_size {
-    margin-left: 150px;
-    transform: scale(0.7);
-    margin-top: 150px;
+      margin-left: 150px;
+      transform: scale(0.7);
+      margin-top: 150px;
+    }
+  }
 }
-    }
-  }
 
-  .logo_card {
-    width: 100%;
+.logo_card {
+  width: 100%;
+  height: 100%;
+
+  .details {
     height: 100%;
+    display: flex;
 
-    .details {
-      height: 100%;
+    * {
+      color: $website-text-color;
+    }
+    .upper_section {
       display: flex;
+      gap: 8px;
+      margin: auto;
+      flex-direction: column;
+    }
 
-      * {
-        color: $website-text-color;
+    .details_wrapper {
+      margin-left: 64px;
+      display: flex;
+      flex-direction: column;
+
+      .project_name {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 46px;
       }
-      .upper_section {
-        display: flex;
-        gap: 8px;
-        margin: auto;
-        flex-direction: column;
+
+      .type {
+        font-size: 14px;
+        padding: 0px 12px;
+        background: #fff0ed;
+        color: #2d0b00;
+        display: inline-flex;
+        line-height: 28px;
+        border-radius: 2px;
       }
-
-      .details_wrapper {
-        margin-left: 64px;
+      .project_details {
+        font-weight: 400;
+        width: 358px;
+        font-size: 18px;
+        line-height: 28px;
+      }
+      .readmore {
         display: flex;
-        flex-direction: column;
-
-        .project_name {
-          font-weight: 700;
-          font-size: 28px;
-          line-height: 46px;
-        }
-
-        .type {
-          font-size: 14px;
-          padding: 0px 12px;
-          background: #fff0ed;
-          color: #2d0b00;
-          display: inline-flex;
-          line-height: 28px;
-          border-radius: 2px;
-        }
-        .project_details {
-          font-weight: 400;
-          width: 358px;
-          font-size: 18px;
-          line-height: 28px;
-        }
-        .readmore {
-          display: flex;
-          align-items: center;
-          gap: 12px;
-          margin: auto 0;
-          font-weight: 500;
-        }
+        align-items: center;
+        gap: 12px;
+        margin: auto 0;
+        font-weight: 500;
       }
     }
   }
-  &:hover {
-    .arrow {
-      transform: rotate(-45deg);
-      transition: all 300ms ease-in-out;
-    }
+}
+&:hover {
+  .arrow {
+    transform: rotate(-45deg);
+    transition: all 300ms ease-in-out;
+  }
 
-    .image_size {
-        width: 80%;
+  .image_size {
+    width: 80%;
     margin: 100px;
     transform: rotate(355deg);
     transition: all 300ms ease-in-out;
-}
-      
-    }
-    .shadow {
-      transform: scale(1.1);
-    }
   }
+}
+.shadow {
+  transform: scale(1.1);
 }
 
 .type_wrapper {
