@@ -7,14 +7,17 @@ function Logo_project({
   thumbnail_location,
   brandColor,
   textColor,
+  typeColor,
+  arrowurl,
 }) {
   const mystyle = {
     background: brandColor,
     color: textColor,
   };
+  
   const typestyle = {
     background: textColor,
-    color: brandColor,
+    color: typeColor,
   };
 
   const different_types = types?.map((type) => (
@@ -39,7 +42,7 @@ function Logo_project({
             </div>
             <div className="readmore">
               <div className="info">Read Case Study</div>
-              <img className="arrow" src="./work_arrow.svg" alt="" />
+              <img className="arrow" src={arrowurl} alt="" />
             </div>
           </div>
         </div>
@@ -47,5 +50,9 @@ function Logo_project({
     </div>
   );
 }
+
+Logo_project.defaultProps = {
+  arrowurl: "./work_arrow.svg",
+};
 
 export default Logo_project;

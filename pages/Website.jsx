@@ -1,16 +1,31 @@
 import React from "react";
 
-export default function Website({
+function Website({
   types,
   name,
   description,
   thumbnail_location,
   brandColor,
+  textColor,
+  typeColor,
+  arrowurl,
 }) {
-  const different_types = types?.map((type) => <p className="type">{type}</p>);
   const mystyle = {
     backgroundColor: brandColor,
+    color: textColor,
   };
+
+  const typestyle = {
+    background: textColor,
+    color: typeColor,
+  };
+
+  const different_types = types?.map((type) => (
+    <p className="type" style={typestyle}>
+      {type}
+    </p>
+  ));
+
   return (
     <div className="website">
       <a className="website_card">
@@ -23,7 +38,7 @@ export default function Website({
             </div>
             <div className="readmore">
               <div className="info">Read Case Study</div>
-              <img className="arrow" src="./work_arrow.svg" alt="" />
+              <img className="arrow" src={arrowurl} alt="" />
             </div>
           </div>
         </div>
@@ -34,3 +49,8 @@ export default function Website({
     </div>
   );
 }
+Website.defaultProps = {
+  arrowurl: "./work_arrow.svg",
+};
+
+export default Website;

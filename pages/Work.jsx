@@ -14,17 +14,11 @@ export const Work = () => {
           description=" I detailswas tasked with creating an mobile app with still
                 in-development website."
           thumbnail_location="./Thumbnail.png"
-          brandColor="#white"
+          brandColor="#2D0B00"
+          textColor="#FFF0ED"
+          typeColor="#2D0B00"
         />
-        <Website
-          types={["App Design", "Logo Design"]}
-          name="Sunrise E-Commerce"
-          description=" I detailswas tasked with creating an mobile app with still
-                in-development website."
-          thumbnail_location="./Thumbnail.png"
-          brandColor="blue"
-          textColor="red"
-        />
+
         <Logo_project
           className="logoprojects"
           types={["Branding"]}
@@ -33,6 +27,7 @@ export const Work = () => {
           thumbnail_location="./Click&Capture.png"
           brandColor="linear-gradient(200.21deg, #CB2525 13.46%, #B81224 90.36%)"
           textColor="white"
+          typeColor="#C62025"
         />
 
         <Logo_project
@@ -43,6 +38,9 @@ export const Work = () => {
           description="IT-related sales and services, Import, Export, Office Suppliers, IT related Training and Skill development"
           thumbnail_location="./htc.png"
           brandColor="radial-gradient(50% 50% at 50% 50%, rgba(34, 80, 173, 0) 0%, rgba(34, 80, 173, 0.07) 100%)"
+          textColor="#2452AE"
+          typeColor="white"
+          arrowurl="./bluearrow.svg"
         />
 
         <Website
@@ -51,16 +49,8 @@ export const Work = () => {
           description=" Website for my fellow front end developer. He wanted something that he could send to recruiters. The main aim of the website was to showcase his expertise and get him hired. And it was a greating sucess😉."
           thumbnail_location="./Edge.png"
           brandColor="#00000A"
-        />
-
-        <Random
-          style
-          className="logoprojects"
-          types={["Branding"]}
-          name="Click & Capture"
-          description=" Website for my fellow front end developer. He wanted something that he"
-          thumbnail_location="./Click&Capture.png"
-          brandColor="linear-gradient(200.21deg, #CB2525 13.46%, #B81224 90.36%)"
+          textColor="white"
+          typeColor="black"
         />
       </div>
     </div>
