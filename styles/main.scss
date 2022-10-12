@@ -415,3 +415,125 @@ $pink: #fff;
     }
   }
 }
+
+.connect-section {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  .connect-wrapper {
+    margin: auto;
+    max-width: 1200px;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    gap: 60px;
+    .connect-title {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 46px;
+      text-align: center;
+    }
+    .connect_button_wrappper {
+      .connect_button_wrapper {
+        display: flex;
+
+        .connect {
+          padding: 0px 16px 0px 30px;
+          border-width: 1px 0px 1px 1px;
+          border-style: solid;
+          border-color: #ababab;
+          background: none;
+          border-radius: 78px 0px 0px 78px;
+          width: 100%;
+          font-weight: 500;
+          font-size: 16px;
+
+          &:focus-visible {
+            padding: 0px 16px 0px 30px;
+            border-width: 1px 0px 0px 1px;
+            border-style: solid;
+            border-color: #d30101;
+            border-radius: 78px 0px 0px 78px;
+          }
+        }
+
+        .connect_btn {
+          background: #070707;
+          border-radius: 0px 78px 78px 0px;
+          padding: 10px 38px;
+          color: white;
+          font-size: 16px;
+          border-style: solid;
+          border-color: #000000;
+        }
+      }
+
+      .connect_copy {
+        font-size: 14px;
+        font-weight: 500;
+        color: rgb(53, 53, 53);
+        margin-top: 16px;
+      }
+    }
+
+    .connect-link-wrapper {
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      grid-column-gap: 4rem;
+      grid-row-gap: 0rem;
+      grid-template-rows: auto auto auto auto auto;
+
+      .divider-line {
+        margin-top: -2px;
+        margin-bottom: -2px;
+        border-bottom: 1px solid rgba(30, 21, 21, 0.2);
+      }
+
+      .email-divider {
+        grid-row: 2/3;
+        grid-column: 3/6;
+        margin-bottom: 50px;
+      }
+      .linkedin-divider {
+        grid-row: 4/5;
+        grid-column: 1/4;
+      }
+      .instagram-divider {
+        grid-row: 4/5;
+        grid-column: 5/7;
+      }
+      .connect-social {
+        display: flex;
+        padding: 10px 0px;
+        justify-content: center;
+        align-content: center;
+        .social-name {
+          display: flex;
+          align-items: center;
+          margin-left: 14px;
+          margin-right: 24px;
+        }
+      }
+      .connect-email {
+        grid-column: 3/6;
+      }
+      .connect-linkedin {
+        grid-column: 1/4;
+        grid-row: 3/4;
+      }
+      .connect-instagram {
+        grid-column: 5/7;
+        grid-row: 3/4;
+      }
+      .connect-medium {
+        grid-column: 1/4;
+        grid-row: 5/6;
+      }
+      .connect-behance {
+        grid-column: 5/7;
+        grid-row: 5/6;
+      }
+    }
+  }
+}
