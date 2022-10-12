@@ -462,4 +462,71 @@
   display: flex;
   gap: 10px;
 }
+
+.aboutme {
+  background: black;
+  margin-top: 140px;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.aboutme .aboutme-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[11];
+      grid-template-columns: repeat(11, 1fr);
+  max-width: 1200px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.aboutme .aboutme-wrapper .aboutme-image {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1/6;
+  overflow: hidden;
+}
+
+.aboutme .aboutme-wrapper .aboutme-image img {
+  border-radius: 4px;
+}
+
+.aboutme .aboutme-wrapper .aboutme-content {
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 6;
+  grid-column: 6/12;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.aboutme .aboutme-wrapper .aboutme-content .aboutme-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 46px;
+}
+
+.aboutme .aboutme-wrapper .aboutme-content .aboutme-title .name {
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 46px;
+}
+
+.aboutme .aboutme-wrapper .aboutme-content .aboutme-paragraph {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+}
 /*# sourceMappingURL=main.css.map */

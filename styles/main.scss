@@ -364,3 +364,54 @@ $pink: #fff;
   display: flex;
   gap: 10px;
 }
+
+.aboutme {
+  background: black;
+  margin-top: 140px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+
+  .aboutme-wrapper {
+    display: grid;
+
+    grid-template-columns: repeat(11, 1fr);
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+
+    .aboutme-image {
+      grid-column: 1/6;
+      overflow: hidden;
+      img {
+        border-radius: 4px;
+      }
+    }
+    .aboutme-content {
+      grid-column: 6/12;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      justify-content: center;
+
+      .aboutme-title {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 46px;
+        .name {
+          font-weight: 900;
+          font-size: 28px;
+          line-height: 46px;
+        }
+      }
+
+      .aboutme-paragraph {
+        font-weight: 400;
+
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+  }
+}
