@@ -344,6 +344,8 @@
 
 .Logo_project .mockup_wrapper .shadow {
   margin-left: 239px;
+  position: absolute;
+  margin-top: 440px;
 }
 
 .Logo_project .mockup_wrapper .image_size {
@@ -366,6 +368,14 @@
   margin-top: 100px;
   -webkit-transform: rotate(-10deg);
           transform: rotate(-10deg);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.Logo_project:hover .shadow {
+  -webkit-transform: scale(1.5, 1);
+          transform: scale(1.5, 1);
+  margin-left: 100px;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
