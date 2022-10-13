@@ -5,46 +5,59 @@ function Connect_section() {
     {
       id: 1,
       coonect_icon_address: "./mail.svg",
-      arrow_adress: "blackarrow.svg",
+      arrow_adress: "copy.svg",
       social_name: "hello@gmail.com",
       class_name: "connect-email connect-social",
     },
     {
       id: 2,
-      coonect_icon_address: "./mail.svg",
+      coonect_icon_address: "./linkedin.svg",
       arrow_adress: "blackarrow.svg",
       social_name: "Linkedin",
       class_name: "connect-linkedin connect-social",
+      address: "https://www.linkedin.com/in/pidus/",
     },
     {
       id: 3,
-      coonect_icon_address: "./mail.svg",
+      coonect_icon_address: "./instagram.svg",
       arrow_adress: "blackarrow.svg",
       social_name: "Instagram",
       class_name: "connect-instagram connect-social",
+      address: "https://www.instagram.com/pidus_b/",
     },
     {
       id: 4,
-      coonect_icon_address: "./mail.svg",
+      coonect_icon_address: "./medium.svg",
       arrow_adress: "blackarrow.svg",
       social_name: "Medium",
       class_name: "connect-medium connect-social",
+      address: "https://medium.com/@pidusbhusal",
     },
     {
       id: 5,
-      coonect_icon_address: "./mail.svg",
+      coonect_icon_address: "./behance.svg",
       arrow_adress: "blackarrow.svg",
       social_name: "Behance",
       class_name: "connect-behance connect-social",
+      address: "https://www.behance.net/pidus/",
     },
   ];
 
   const bundle_social = socials.map((social) => (
-    <div className={social.class_name}>
-      <img src={social.coonect_icon_address} alt="" />
-      <div className="social-name">{social.social_name}</div>
-      <img src={social.arrow_adress} alt="" />
-    </div>
+    <a target="_blank" href={social.address} className={social.class_name}>
+      <div className="social-name-and-logo">
+        <img width="30px" src={social.coonect_icon_address} alt="" />
+        <div className="social-name">{social.social_name}</div>
+      </div>
+
+      <img
+        loading="lazy"
+        width="30px"
+        src={social.arrow_adress}
+        className="arrow"
+        alt=""
+      />
+    </a>
   ));
   return (
     <div className="connect-section">

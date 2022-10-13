@@ -6,8 +6,8 @@
     #fff; */
   background: radial-gradient(circle at bottom, #fff, transparent 80%), -webkit-gradient(linear, left bottom, left top, from(#ffecda), color-stop(70%, transparent)), -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, rgba(255, 255, 255, 0.4))), #f9f8f5;
   background: radial-gradient(circle at bottom, #fff, transparent 80%), linear-gradient(to top, #ffecda 0%, transparent 70%), linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.4) 70%), #f9f8f5;
-  -webkit-animation: bg 30s infinite;
-          animation: bg 30s infinite;
+  -webkit-animation: bg 10s infinite;
+          animation: bg 10s infinite;
 }
 
 @-webkit-keyframes bg {
@@ -640,30 +640,51 @@
   -ms-grid-row-span: 1;
   grid-row: 4/5;
   -ms-grid-column: 5;
-  -ms-grid-column-span: 2;
-  grid-column: 5/7;
+  -ms-grid-column-span: 3;
+  grid-column: 5/8;
 }
 
 .connect-section .connect-wrapper .connect-link-wrapper .connect-social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px 0px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  padding: 20px 0px;
+  text-decoration: none;
+  color: black;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.connect-section .connect-wrapper .connect-link-wrapper .connect-social:hover {
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.connect-section .connect-wrapper .connect-link-wrapper .connect-social:hover .arrow {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.connect-section .connect-wrapper .connect-link-wrapper .connect-social .social-name-and-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
 }
 
 .connect-section .connect-wrapper .connect-link-wrapper .connect-social .social-name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 14px;
+  font-weight: 500;
+  text-align: left;
   margin-right: 24px;
 }
 
@@ -671,6 +692,17 @@
   -ms-grid-column: 3;
   -ms-grid-column-span: 3;
   grid-column: 3/6;
+}
+
+.connect-section .connect-wrapper .connect-link-wrapper .connect-email:hover .arrow {
+  -webkit-transform: scale(1.2ddd);
+          transform: scale(1.2ddd);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.connect-section .connect-wrapper .connect-link-wrapper .connect-email .arrow {
+  width: 22px;
 }
 
 .connect-section .connect-wrapper .connect-link-wrapper .connect-linkedin {
@@ -684,8 +716,8 @@
 
 .connect-section .connect-wrapper .connect-link-wrapper .connect-instagram {
   -ms-grid-column: 5;
-  -ms-grid-column-span: 2;
-  grid-column: 5/7;
+  -ms-grid-column-span: 3;
+  grid-column: 5/8;
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
@@ -702,8 +734,8 @@
 
 .connect-section .connect-wrapper .connect-link-wrapper .connect-behance {
   -ms-grid-column: 5;
-  -ms-grid-column-span: 2;
-  grid-column: 5/7;
+  -ms-grid-column-span: 3;
+  grid-column: 5/8;
   -ms-grid-row: 5;
   -ms-grid-row-span: 1;
   grid-row: 5/6;
