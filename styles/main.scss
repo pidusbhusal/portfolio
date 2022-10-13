@@ -535,7 +535,7 @@ $pink: #fff;
         grid-column: 3/6;
         &:hover {
           .arrow {
-            transform: scale(1.2ddd);
+            transform: scale(1.2);
             transition: all 300ms ease-in-out;
           }
         }

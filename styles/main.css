@@ -695,8 +695,8 @@
 }
 
 .connect-section .connect-wrapper .connect-link-wrapper .connect-email:hover .arrow {
-  -webkit-transform: scale(1.2ddd);
-          transform: scale(1.2ddd);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
